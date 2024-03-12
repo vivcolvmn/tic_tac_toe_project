@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("resources/rickNmorty_bg.jpg");
+    background-size:cover;
+}
+
+h1 {
+    height: 125px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rick {
+    background-image: url("resources/rick_wins.png");
+    background-position: center;
+}
+
+.morty {
+    background-image: url("resources/morty_wins.png");
+    background-position: center;
+}
+
+.nobody {
+    background-image: url("resources/tie_test.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    grid-template-areas: "square0 square1 square2"
+    "square3 square4 square5"
+    "square6 square7 square8";
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+.rickToken {
+    max-height: 130px;
+    max-width: 130px;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+
+.mortyToken {
+    max-height: 125px;
+    max-width: 125px;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+#square-0 {
+    grid-area: square0;
+    height: 150px;
+    width: 150px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+
+#square-1 {
+    grid-area: square1;
+    height: 150px;
+    width: 150px;
+    border-bottom: 10px solid black;
+}
+
+#square-2 {
+    grid-area: square2;
+    height: 150px;
+    width: 150px;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+#square-3 {
+    grid-area: square3;
+    height: 150px;
+    width: 150px;
+    border-right: 10px solid black;
+}
+
+#square-4 {
+    grid-area: square4;
+    height: 150px;
+    width: 150px;
+}
+
+#square-5 {
+    grid-area: square5;
+    height: 150px;
+    width: 150px;
+    border-left: 10px solid black;
+}
+
+#square-6 {
+    grid-area: square6;
+    height: 150px;
+    width: 150px;
+    border-top: 10px solid black;
+    border-right: 10px solid black;
+}
+
+#square-7 {
+    grid-area: square7;
+    height: 150px;
+    width: 150px;
+    border-top: 10px solid black;
+}
+
+#square-8 {
+    grid-area: square8;
+    height: 150px;
+    width: 150px;
+    border-top: 10px solid black;
+    border-left: 10px solid black;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+#newGame {
+    margin-right: 20px;
+}
+
+#giveUp {
+    margin-left: 20px;
+}
